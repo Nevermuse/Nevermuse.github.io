@@ -1,0 +1,63 @@
+:root {
+	--dark: rgb(43 68 45);
+    --light: rgb(231, 241, 232);
+    --med: rgb(80 118 84);
+}
+
+@font-face {
+	font-family: 'Lora';
+	src: url(fonts/Lora-VariableFont_wght.ttf) format('woff2');
+}
+
+@font-face {
+	font-family: 'Lora-Italic';
+	src: url(fonts/Lora-Italic-VariableFont_wght.ttf) format('woff2');
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background-color: var(--dark);
+	color: var(--med);
+	font-size: 1.25em;
+	font-family: 'Lora', serif;
+	letter-spacing: -.05pt;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+header,
+main,
+footer {
+	width: 100%;
+	max-width: 75ch;
+	margin: 0 auto;
+	padding: 0 1.125em;
+}
+
+header{
+	padding-top:10%;
+}
+
+.med-txt{
+	color: var(--med);
+}
+
+h1 {
+	line-height: 0.2em;
+    font-weight: 500;
+    font-size: 2.6em;
+    color: var(--light);
+	letter-spacing: -1pt;
+}
+
+em{
+	font-family: 'Lora-Italic', serif;
+}
