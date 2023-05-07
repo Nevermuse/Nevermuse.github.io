@@ -14,6 +14,18 @@
 	src: url(fonts/Lora-Italic-VariableFont_wght.ttf) format('woff2');
 }
 
+@keyframes cursor {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 html,
 body {
 	margin: 0;
@@ -23,8 +35,8 @@ body {
 html {
 	background-color: var(--dark);
 	color: var(--med);
-	font-size: 1.25em;
-	font-family: 'Lora', serif;
+	font-size: 1.5em;
+	font-family:monospace;
 	letter-spacing: -.05pt;
 }
 
@@ -46,11 +58,8 @@ header{
 	padding-top:10%;
 }
 
-.med-txt{
-	color: var(--med);
-}
-
 h1 {
+	font-family: 'Lora', serif;
 	line-height: 0.2em;
     font-weight: 500;
     font-size: 2.6em;
@@ -60,4 +69,18 @@ h1 {
 
 em{
 	font-family: 'Lora-Italic', serif;
+}
+
+.med-txt{
+	color: var(--med);
+}
+
+.blink {
+    display: inline-block;
+    width: 12px;
+    height: 1em;
+    background: var(--light);
+    margin-left: 5px;
+    border-radius: 2px;
+    animation: cursor 1s infinite;
 }
